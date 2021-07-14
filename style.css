@@ -17,6 +17,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: silver; */
     
 }
 
@@ -41,7 +42,7 @@ footer{
 .header-items .header-thumbile img{
     Width : 556.01px;
     Height : 438px;
-    overflow: hidden;
+    
 }
 /* headr title style */
 .header-title{
@@ -60,7 +61,7 @@ footer{
     height: 44px;
     background: #E02C6D;
     text-decoration: none;
-    transition: width 2s;
+    
 }
 .fa-long-arrow-alt-right{
     margin-left: 15px;
@@ -74,6 +75,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     margin-bottom: 165px;
+    
     
 }
 .players{
@@ -178,10 +180,73 @@ footer{
 
 @media only screen and (max-width: 992px) and (min-width: 687px)  {
 
+/* common style  */
+
+header{
+    height: 350px;
+}
+
+   /* header style start  */
+   .header-info{
+    margin-left: 30px;
+}
+/* headr banner style */
+.header-thumbile{
+    margin-right: 0;
+    margin-top: 50px;
+}
+.header-items .header-thumbile img{
+    Width : 300px;
+    Height : 200px;
+   
+}
+/* header title style */
+.header-title{
+    Width: 300px;
+    Height: 230px;
+    font-size: 40px;
+    line-height: 60px;
+    color: wheat;
+}
+/* headr link button style */
     .players {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-row-gap: 27px;
+    }
+
+    /* Tornament overview */
+    .overview-items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 100px;
+        margin-bottom: 165px;
+       
+    }
+    .info-size{
+        width: 300px;
+        height: 309px;
+    }
+    
+    .banner img{
+        width: 300px;
+        height: 400px;
+        /* margin-top: 150px; */
+    }
+    .title{
+        Width: 300px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 60px;
+        color: black;
+        
+    }
+    
+    .description{
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
+        text-align: justify;
     }
 
 }
@@ -233,6 +298,10 @@ for mobile the media query sart
         margin:0 2% 25px 2%;
         padding: 10px;
         
+    }
+
+    .tornament-overview{
+        padding: 10px 30px;
     }
    
     .overview-items {

@@ -1,0 +1,135 @@
+/* import google poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Common Style */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(32, 51, 158);
+    margin-bottom: 70px;
+}
+main{
+    margin-bottom: 40px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* header style */
+.header-items{
+    display: flex;
+    align-items: center;
+   
+}
+/* header banner hover effect */
+.header-items:hover .header-thumbile img{
+    transform: scale(1.1) skew(10deg);
+    transition: transform 1s ease-in-out;
+}
+.header-flex{
+    width: 50%;
+}
+/* headr banner style */
+.header-items .header-thumbile img{
+    Width : 556.01px;
+    Height : 438px;
+    overflow: hidden;
+}
+/* headr title style */
+.header-title{
+    Width: 485px;
+    Height: 230px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    color: wheat;
+    margin-left: 156px;
+}
+/* headr link button style */
+.link-btn{
+    color: white;
+    padding: 10px 24px;
+    width: 168px;
+    height: 44px;
+    margin-left: 156px;
+    background: #E02C6D;
+    text-decoration: none;
+    transition: width 2s;
+}
+.fa-long-arrow-alt-right{
+    margin-left: 15px;
+}
+
+/* main part design start from here */
+
+/* container design */
+.container{
+    margin: 0 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.player{
+    height: 474px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 5px 10px 40px 2px #888888;
+}
+.player .player-thembile img{
+    width: 300px;
+    height: 256px;
+    margin-bottom: 16px;
+}
+.player .player-info{
+
+    width: 300px;
+    height: 154px;
+    text-align: justify;
+
+}
+
+.player .player-info .player-name{
+    font-weight: 700;
+    font-size: 26px;
+    margin: 0;
+    
+}
+.player .player-info .player-description{
+    font-size: 16px;
+    line-height: 26px;
+}
+/* footer deaign start from here */
+.footer-image img{
+    width: 480px;
+    width: 110;
+    margin: 20px 0;
+}
+
+.social-media p{
+    width: 170px;
+    height: 32px;
+    margin: 20px 0;
+    text-align: center;
+
+}
+.copyright{
+    text-align: center;
+}

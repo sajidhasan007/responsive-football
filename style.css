@@ -25,6 +25,7 @@ footer{
 /* header style */
 .header-items{
     display: flex;
+    justify-content: space-between;
     align-items: center;
    
 }
@@ -33,10 +34,13 @@ footer{
     transform: scale(1.1) skew(10deg);
     transition: transform 1s ease-in-out;
 }
-.header-flex{
-    width: 50%;
+.header-info{
+    margin-left: 156px;
 }
 /* headr banner style */
+.header-thumbile{
+    margin-right: 140px;
+}
 .header-items .header-thumbile img{
     Width : 556.01px;
     Height : 438px;
@@ -50,7 +54,6 @@ footer{
     font-size: 64px;
     line-height: 80px;
     color: wheat;
-    margin-left: 156px;
 }
 /* headr link button style */
 .link-btn{
@@ -58,7 +61,6 @@ footer{
     padding: 10px 24px;
     width: 168px;
     height: 44px;
-    margin-left: 156px;
     background: #E02C6D;
     text-decoration: none;
     transition: width 2s;
@@ -75,6 +77,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 165px;
     
 }
 .players{
@@ -116,6 +119,39 @@ footer{
     font-size: 16px;
     line-height: 26px;
 }
+
+/* tornament overview style start from here */
+
+.overview-items{
+    margin-bottom: 165px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.info-size{
+    width: 469px;
+    height: 309px;
+}
+
+.banner img{
+    width: 520px;
+    height: 427px;
+}
+.title{
+    Width: 485px;
+   
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: black;
+}
+
+.description{
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+
 /* footer deaign start from here */
 .footer-image img{
     width: 480px;
@@ -124,12 +160,88 @@ footer{
 }
 
 .social-media p{
-    width: 170px;
+    width: 200px;
     height: 32px;
     margin: 20px 0;
     text-align: center;
 
 }
+.social-media p a{
+    font-size: 30px;
+    color: gray;
+    margin-right: 15px;
+}
 .copyright{
     text-align: center;
+    font-size: 18px;
+    font-weight: 700;
 }
+
+/* 
+for mobile the media query sart 
+*/
+@media only screen and (max-width: 688px) {
+    
+
+    /* header style start */
+    .header-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-info{
+        margin-left: 16px;
+    }
+    /* headr banner style */
+    .header-items .header-thumbile img{
+        width: 100%;
+    }
+    .header-thumbile{
+        margin-right: 0px;
+    }
+    .header-title{
+        Width: 100%; 
+        margin-bottom: 100px;
+    }
+
+
+
+    /* overview style start from here  */
+    .container {
+      
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 25px;
+    }
+
+    .overview-items {
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 250px;
+    }
+    .info-size{
+        width: 100%;
+        
+    }
+    
+    .banner img{
+        width: 100%;
+        
+    }
+    .title{
+        Width: 100%;
+        
+    }
+    
+    footer{
+        display: none;
+    }
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 27px;
+    }
+  }
